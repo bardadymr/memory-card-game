@@ -327,6 +327,7 @@ font-size: 16px;
         border-radius: 15px;
         position: relative;
         perspective: 100px;
+        transform: translateZ(0);
         z-index:7;
     }
 
