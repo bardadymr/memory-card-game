@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="game_container">
+   
+    <div class="cards_area" id="cards_area">
+
+      <ul class="card_table">
+
+        <li class="card">
+          <div class="view">
+           <div class="front-view">
+            <h1 class="text-front">?</h1>
+          </div>
+          <div class="back-view">
+            <img src="./img/monster_1.png" alt="monster 1">
+           </div>
+         </div>
+        </li>
+
+        <li class="card">
+          <div class="view">
+           <div class="front-view">
+            <h1 class="text-front">?</h1>
+          </div>
+          <div class="back-view">
+            <img src="./img/monster_1.png" alt="monster 1">
+           </div>
+         </div>
+        </li>
+
+        <li class="card">
+          <div class="view">
+           <div class="front-view">
+            <h1 class="text-front">?</h1>
+          </div>
+          <div class="back-view">
+            <img src="./img/monster_2.png" alt="monster 2">
+           </div>
+         </div>
+        </li>
+
+        <li class="card">
+          <div class="view">
+           <div class="front-view">
+            <h1 class="text-front">?</h1>
+          </div>
+          <div class="back-view">
+            <img src="./img/monster_2.png" alt="monster 2">
+           </div>
+         </div>
+        </li>
+
+        <li class="card">
+          <div class="view">
+           <div class="front-view">
+            <h1 class="text-front">?</h1>
+          </div>
+          <div class="back-view">
+            <img src="./img/monster_3.png" alt="monster 3">
+           </div>
+         </div>
+        </li>
+
+        <li class="card">
+          <div class="view">
+           <div class="front-view">
+            <h1 class="text-front">?</h1>
+          </div>
+          <div class="back-view">
+            <img src="./img/monster_3.png" alt="monster 3">
+           </div>
+         </div>
+        </li>
+
+        <li class="card">
+          <div class="view">
+           <div class="front-view">
+            <h1 class="text-front">?</h1>
+          </div>
+          <div class="back-view">
+            <img src="./img/monster_4.png" alt="monster 4">
+           </div>
+         </div>
+        </li>
+
+        <li class="card">
+          <div class="view">
+           <div class="front-view">
+            <h1 class="text-front">?</h1>
+          </div>
+          <div class="back-view">
+            <img src="./img/monster_4.png" alt="monster 4">
+           </div>
+         </div>
+        </li>
+
+        <li class="card">
+          <div class="view">
+           <div class="front-view">
+            <h1 class="text-front">?</h1>
+          </div>
+          <div class="back-view">
+            <img src="./img/monster_5.png" alt="monster 5">
+           </div>
+         </div>
+        </li>
+
+        <li class="card">
+          <div class="view">
+           <div class="front-view">
+            <h1 class="text-front">?</h1>
+          </div>
+          <div class="back-view">
+            <img src="./img/monster_5.png" alt="monster 5">
+           </div>
+         </div>
+        </li>
+
+        <li class="card">
+          <div class="view">
+           <div class="front-view">
+            <h1 class="text-front">?</h1>
+          </div>
+          <div class="back-view">
+            <img src="./img/monster_6.png" alt="monster 6">
+           </div>
+         </div>
+        </li>
+
+        <li class="card">
+          <div class="view">
+           <div class="front-view">
+            <h1 class="text-front">?</h1>
+          </div>
+          <div class="back-view">
+            <img src="./img/monster_6.png" alt="monster 6">
+           </div>
+         </div>
+        </li>
+
+      </ul>
+     <div class="disabled_game" id = "id_disabled">
+      <h1>Press "PLAY" to start the game</h1>
+     </div>
+     <div class="win_game hide" id = "win_disabled">
+      <h1 class="congrat">Congratulation!</h1>
+      <div class="first hide">
+        <img class="place_img" src="./img/first.png" alt="first" width="250px">
+        <h1 class="text_result">Best result!</h1>
+
+      </div>
+
+      <div class="second hide">
+        <img class="place_img" src="./img/second.png" alt="second" width="250px">
+        <h1 class="text_result">Good result</h1>
+
+      </div>
+
+      <div class="third hide">
+        <img class="place_img" src="./img/third.png" alt="third" width="250px">
+        <h1 class="text_result">Try again!</h1>
+      </div>
+      <p class="current_time"></p>
+     </div>
+
+   </div>
+   
+   <div class="nav_area">
+    <div class="buttons">
+        <button id = "play_id" class="btn_play" onclick="startGame()">Play</button>
+        <button class="btn_restart" id="restart_id">Restart</button>
+    </div>
+    <div class="timer">
+      <h1 class="time_text">Time</h1>
+      <div class="stopwatch">
+        <span id="min">00</span> 
+        <span>:</span> 
+        <span id="sec">00</span> 
+        <span>:</span> 
+        <span id="tens">00</span>
+      </div>
+    </div>
+
+   </div>
+
+</div>  
+<script src="./js/script.js"></script>
+</body>
+</html>
