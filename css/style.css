@@ -287,7 +287,6 @@ font-size: 16px;
         justify-content: center;
         align-items: center;
         color: #fff;
-        z-index: 8;
     }
     
     .win_game {
@@ -307,7 +306,6 @@ font-size: 16px;
         justify-content: center;
         align-items: center;
         color: #646464;
-        z-index: 9;
 }
 
 .card_table {
@@ -326,9 +324,7 @@ font-size: 16px;
         width: 80px;
         border-radius: 15px;
         position: relative;
-        perspective: 100px;
-        transform: translateZ(0);
-        z-index:7;
+        perspective: 500px;
     }
 
     .hide {
