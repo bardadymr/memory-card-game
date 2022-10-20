@@ -48,7 +48,7 @@ function matchCard (img1, img2) {
                 document.querySelector('.first').classList.remove('hide');
               } 
 
-                   if (seconds > 20 && minutes < 1) {
+                   if (seconds > 20 && seconds < 40 && minutes < 1) {
                 document.querySelector('.second').classList.remove('hide');
               }
 
