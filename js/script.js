@@ -55,11 +55,7 @@ function matchCard (img1, img2) {
                    if (seconds >= 40 || minutes >= 1) {
                 document.querySelector('.third').classList.remove('hide');
               }
-            },
-            setTimeout(() => {
-                return refreshCards();
-            
-            }, 2000), 1000);
+            }, 500);
         }
     cardOne.removeEventListener('click', flipCard);
     cardTwo.removeEventListener('click', flipCard);
@@ -126,6 +122,10 @@ btnRestart.addEventListener('click', () => {
     document.querySelector('.first').classList.add('hide');
     document.querySelector('.second').classList.add('hide');
     document.querySelector('.third').classList.add('hide');
+    setTimeout(() => {
+        return refreshCards();
+    
+    }, 100)
 
 })
 
@@ -188,5 +188,3 @@ function startTimer () {
   }
 
 }
-
-/* Win Game */
