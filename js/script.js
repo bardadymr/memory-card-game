@@ -44,7 +44,7 @@ function matchCard (img1, img2) {
                 }
 
                 
-                   if (seconds < 20 && minutes < 1) {
+                   if (seconds <= 20 && minutes < 1) {
                 document.querySelector('.first').classList.remove('hide');
               } 
 
@@ -52,14 +52,14 @@ function matchCard (img1, img2) {
                 document.querySelector('.second').classList.remove('hide');
               }
 
-                   if (seconds > 40 || minutes >= 1) {
+                   if (seconds >= 40 || minutes >= 1) {
                 document.querySelector('.third').classList.remove('hide');
               }
             },
             setTimeout(() => {
                 return refreshCards();
             
-            }, 500), 1000);
+            }, 500), 1500);
         }
     cardOne.removeEventListener('click', flipCard);
     cardTwo.removeEventListener('click', flipCard);
