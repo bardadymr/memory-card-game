@@ -306,6 +306,7 @@ font-size: 16px;
         justify-content: center;
         align-items: center;
         color: #646464;
+        z-index: 9;
 }
 
 .card_table {
