@@ -59,7 +59,7 @@ function matchCard (img1, img2) {
             setTimeout(() => {
                 return refreshCards();
             
-            }, 500), 1500);
+            }, 300), 2000);
         }
     cardOne.removeEventListener('click', flipCard);
     cardTwo.removeEventListener('click', flipCard);
